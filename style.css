@@ -1,23 +1,79 @@
+:root{
+        /* color */
+    /* red */
+    --color-primary-red:  #E50914;
+    --color-btn-hover: #E50914 ;
+    --color-btn-active: #BB0A12 ;
+    --color-btn-rest: #E50914 ;
+
+    --color-primary-black: #000000 ;
+    --color-header-bg: hsla(0, 0%, 0%, 0.7) ;
+
+    --color-gray: #8C8C8C;
+    --color-seperator: #222222;
+
+    --color-primary-white: #FFFFFF ;
+
+    --color-main-blue: #0071EB ;
+    --color-main-orange: #FFA00A ;
+    --color-main-green: #5FA53F; 
+
+}
+
 *{
     margin: 0 ;
     padding: 0;
     box-sizing: border-box;
-    list-style-type: none;
-    text-decoration: none;
 }
 
-body{
-    background: #000000;
+html,body{
+    background: var(--color-primary-black);
+    font-family: "Netflix sans", sans-serif;
+    
 }
 
-/* navbar styling */
-header{
-    margin: 0 56px;
-    margin-top: 20px;
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
 }
+.img-responsive{
+    max-width: 100%;
+    height: auto;
+}
+.seperator{
+    height: 6px;
+    background: var(--color-seperator);
+    border: none;
+}
+
+/* .........................header styling.................... */
+
+.header{
+    background: url(images/netflix-landingpage-img.png) no-repeat center center / cover;
+    height: 100vh;
+    position: relative;
+}
+.header:after{
+    content: " ";
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0,0,0,0.6);
+}
+.header > .container{
+    max-width: 1600px;
+}
+
+/* .........................navbar styling..................... */
+
 .navbar-contents{
     display: flex;
     justify-content: space-between;
+    padding: 0 56px;
+    padding-top: 28px;
+    z-index: 9999999;
 }
 .navbar-links{
     display: flex;
@@ -25,24 +81,178 @@ header{
     gap: 32px;
     align-items: center;
 }
-
-.navbar-links .navbar-links_1 > a{
+.navbar-logo{
+    z-index: 2;
+}
+.navbar-links > .language-selector{
     font-family: "Netflix Sans", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
-    color: #FFFFFF;
-    border: 2px solid #FFFFFF;
-    padding: 9px 14px 9px 23px;
+    color: var(--color-primary-white);
+    border: 2px solid var(--color-primary-white);
+    padding: 10px 18px;
     border-radius: 2px;
+    text-decoration: none;
+    z-index: 999;
 }
-.navbar-links .navbar-links_2 > a{
+.sign-in{
     font-family: "Netflix Sans", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 20px;
     background: #E50914;
-    color: #FFFFFF;
-    padding: 7px 16px 7px 17px;
+    color: var(--color-primary-white);
+    padding: 10px 20px;
     border-radius: 3px;
+    text-decoration: none;
+    z-index: 99;
+}
+
+/* .......................hero-section styling........................... */
+.hero{
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+.hero-contents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 99999;
+    text-align: center;
+    padding-block: 60px;
+}
+.title{
+    font-weight: 700 ;
+    font-size: 64px;
+    line-height: 70px;
+    color: var(--color-primary-white);
+    max-width: 20ch;
+    margin-bottom: 16px;
+}
+.title-info{
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 32px;
+    color: var(--color-primary-white);
+    margin-bottom: 30px;
+}
+.sub-title{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--color-primary-white);
+    margin-bottom: 20px
+}
+.input-btn{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.input{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--color-gray);
+    width: 520px;
+    height: 76px;
+    padding: 26px 10px ;
+    border-radius: 4px 0 0 4px;
+    border-right: 0;
+    cursor: pointer;
+    outline: none;
+}
+.btn{
+    font-weight: 400 ;
+    font-size: 30px;
+    line-height: 38px;
+    color: var(--color-primary-white);
+    text-decoration: none;
+    background: var(--color-primary-red);
+    padding: 18px 30px;
+    text-align: center;
+    border-left: none;
+    outline: none;
+    border-radius: 0 4px 4px 0; 
+}
+.btn > i{
+    font-size: 26px;
+    color: var(--color-primary-white);
+    margin-left: 10px;
+}
+
+
+/* ............................ seection frames styling.................... */
+
+.frames {
+    display: flex;
+    margin-block: 50px;
+    align-items: center;
+    gap: 60px;
+}
+.frame-info{
+    width: 50%;
+}
+.frame-title{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 55px;
+    color: var(--color-primary-white);
+    margin-block: 20px;
+}
+.frame-img{
+    width: 50%;
+    position: relative;
+}
+.frame-img > .frame-img-main{
+    z-index: 222222;
+}
+.frame-img-vid{
+    position: absolute;
+    height: 217  ;
+    width: 68%;
+    top: 83px;
+    right: 113px;
+    z-index: 0;
+}
+main .container > .frames-seperator{
+    max-width: none;
+}
+
+/* ....................section 2 styling........................... */
+.reverse{
+    flex-direction: row-reverse;
+}
+.card{
+    position: absolute;
+    top: 248px;
+    left: 92px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    display: flex;
+    background: var(--color-primary-black);
+    align-items: center;
+    border: 3px solid rgba(255,255,255, 0.25);
+    width: 324px;
+}
+.card-block{
+    background: var(--color-primary-black);
+    margin-left: 14px;
+}
+.card-title{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color-primary-white);
+    margin-bottom: 2px;
+}
+.card-download{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--color-main-blue);
+}
+.download-icon{
+    margin-left: auto;
 }
