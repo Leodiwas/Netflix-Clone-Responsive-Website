@@ -11,6 +11,7 @@
 
     --color-gray: #8C8C8C;
     --color-seperator: #222222;
+    --color-footer-p: #757575 ;
 
     --color-primary-white: #FFFFFF ;
 
@@ -179,11 +180,11 @@ html,body{
 .btn > i{
     font-size: 26px;
     color: var(--color-primary-white);
-    margin-left: 10px;
+    margin-left: 14px;
 }
 
 
-/* ............................ seection frames styling.................... */
+/* ......................... section-1 frames styling.................... */
 
 .frames {
     display: flex;
@@ -204,9 +205,11 @@ html,body{
 .frame-img{
     width: 50%;
     position: relative;
+    z-index: 99999;
 }
 .frame-img > .frame-img-main{
-    z-index: 222222;
+    z-index: 2222222;
+    position: relative;
 }
 .frame-img-vid{
     position: absolute;
@@ -220,7 +223,7 @@ main .container > .frames-seperator{
     max-width: none;
 }
 
-/* ....................section 2 styling........................... */
+/* ....................section-2 frames styling........................... */
 .reverse{
     flex-direction: row-reverse;
 }
@@ -255,4 +258,100 @@ main .container > .frames-seperator{
 }
 .download-icon{
     margin-left: auto;
+}
+
+/* ..........................section-3 frames styling.......................... */
+
+.frame-img-mac-pic{
+    width: 62%;
+    height: 204px;
+    top: 29px;
+    position: absolute;
+    right: 118px;
+    z-index: 2222;
+} 
+
+/* ....................frequently asked questions styling...................... */
+
+.faq-contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-block: 80px;
+
+}
+.faq-contents > .frame-title{
+    margin-bottom: 50px;
+}
+.faq-contents-bars{
+    margin-bottom: 60px;
+}
+.faq-contents-bar > .title-info{
+    margin-bottom: 0;
+}
+.faq-contents-bar{
+    background: #303030;    ;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 22px 20px ;
+    gap: 480px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+.faq-contents-bar > a > i{
+    color: var(--color-primary-white);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* ...................footer styling.............................. */
+
+.footer > .container{
+    max-width: 900px;
+    margin-block:  60px;
+}
+.footer-contents > .footer-contents-title{
+    font-weight: 400;
+    font-size: 16px ;
+    line-height: 20px;
+    color: var(--color-footer-p);
+    text-decoration: none;
+}
+
+.footer-contents-title > p{
+    margin-bottom: 30px;
+    transition: all 0.5s ease;
+}
+.footer-contents > .footer-contents-title > p::after{
+    content: "";
+    width: 0;
+    height: 2px;
+    background: var(--color-footer-p);
+    display: block;
+}
+.footer-contents > .footer-contents-title > p:hover::after{
+    width: 26%;
+}
+.footer-info{
+    display: flex;
+    gap: 120px;
+    margin-bottom: 30px;
+}
+.footer-info-items > a{
+    font-weight: 400;
+    font-size: 14px ;
+    line-height: 16px;
+    color: var(--color-footer-p);
+    cursor: pointer;
+    text-decoration: none;
+}
+.footer-info-items a > p{
+    margin-bottom: 15px;
+
+}
+.footer-info-items > a:hover{
+    text-decoration: underline;
 }
