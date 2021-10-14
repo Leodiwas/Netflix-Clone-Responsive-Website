@@ -499,3 +499,58 @@ main .container > .frames-seperator{
 .sign-up_page-footer .container .footer-contents > .footer-info{
     gap: 150px;
 }
+
+/* .......................CSS STYLING ENDS...................... */
+
+/* nav-toggler_show-hide css start */
+
+.nav-toggler_show-hide{
+    border:none;
+    padding: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    height: 39px;
+    /* display: none; */
+  }
+  .nav-toggler_show-hide span{
+    border: 0;
+    outline: none;
+  }
+  .nav-toggler_show-hide span:before,
+  .nav-toggler_show-hide span:after 
+  {
+    width: 28px;
+    height: 3px;
+    background-color: #fff;
+    display: block;
+    transition: .3s;
+  }
+  .nav-toggler_show-hide span:before {
+    content: '';
+    transform: translateY(0px) rotate(90deg);
+  }
+  .nav-toggler_show-hide span:after {
+    content: '';
+    transform: translateY(-2px);
+  }
+  .nav-toggler_show-hide.toggler-open span:before {
+    transform: translateY(0px) rotate(45deg);
+  }
+  .nav-toggler_show-hide.toggler-open span:after {
+    transform: translateY(-3px) rotate(-45deg);
+  }
+  /* nav-toggler_show-hide css ends */
+
+/* ......................Media Queries Starts..........................  */
+
+/* media queries for Ipad & Tablet  */
+
+@media screen and (max-width: 768px ){
+
+}
+
+/* media queries for Mobile  */
+
+@media screen and (max-width: 480px ){
+
+}
