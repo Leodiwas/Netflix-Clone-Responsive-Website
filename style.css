@@ -12,12 +12,15 @@
     --color-gray: #8C8C8C;
     --color-seperator: #222222;
     --color-footer-p: #757575 ;
+    --color-sign-in-help: #B3B3B3 ;
 
     --color-primary-white: #FFFFFF ;
 
     --color-main-blue: #0071EB ;
     --color-main-orange: #FFA00A ;
     --color-main-green: #5FA53F; 
+
+    --color-facebook: #4267B2 ;
 
 }
 
@@ -53,6 +56,7 @@ html,body{
     background: url(images/netflix-landingpage-img.png) no-repeat center center / cover;
     height: 100vh;
     position: relative;
+    min-height: 660px;
 }
 .header:after{
     content: " ";
@@ -309,6 +313,9 @@ main .container > .frames-seperator{
 
 /* ...................footer styling.............................. */
 
+.sign-in_page-header > .container{
+    max-width: 1600px;
+}
 .footer > .container{
     max-width: 900px;
     margin-block:  60px;
@@ -354,4 +361,141 @@ main .container > .frames-seperator{
 }
 .footer-info-items > a:hover{
     text-decoration: underline;
+}
+
+/* .......................Sign-in page Styling .........................*/
+
+.sign-up_page_body{
+    background: url(images/netflix-landingpage-img.png) no-repeat center center / cover;
+}
+
+.sign-in_page-header:after{
+    background: rgba(0,0,0,0.2);
+}
+.sign-in_page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+.sign-in_page_contents{
+    position: relative;
+    z-index: 9999;
+    background: rgba(0,0,0,0.7);
+    padding: 60px 70px 140px 70px;
+    border-radius: 4px;
+    margin-bottom: 90px;
+}
+.sign-in-title{
+    font-weight: 700 ;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 30px;
+    color: var(--color-primary-white);
+}
+.sign-in_inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 50px;
+}
+.sign-in_input{
+    background: #333333;
+    border-radius: 4px;
+    border: none;
+    padding: 16px 20px;
+    font-weight: 400 ;
+    font-size: 16px;
+    line-height: 20px;
+    outline: none;
+    color: var(--color-primary-white);
+}
+.sign-in_btn-container{
+    margin-bottom: 30px;
+}
+.sign-in_btn{
+    background: var(--color-btn-hover);
+    text-decoration: none;
+    padding: 16px 130px;
+    text-align: center;
+    color: var(--color-primary-white);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px ; 
+    width: 100%;
+    border-radius: 4px;
+}
+.sign-in_help{
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px ; 
+    border-radius: 4px;
+    margin-bottom: 56PX;
+}
+.sign-in_help > a{
+    text-decoration: none;
+    color: var(--color-sign-in-help);
+
+}
+.sign-in_contact_facebook{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.sign-in_contact_facebook > i{
+    font-size: 20px ;
+    color: var(--color-facebook);
+}
+.sign-in_contact_facebook > a{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px ; 
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--color-sign-in-help);
+}
+.sign-in_contact_signup{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--color-sign-in-help);
+    margin-bottom: 14px;
+}
+.sign-in_contact_signup > p > a{
+    text-decoration: none;
+    color: var(--color-primary-white);
+}
+.sign-in_contact_signup > p > a:hover{
+    text-decoration: underline;
+}
+.sign-in_about{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    max-width: 40ch;
+    color: var(--color-sign-in-help);
+}  
+.sign-in_about > a{
+    color: var(--color-main-blue);
+    text-decoration: none;
+} 
+.sign-in_about > a:hover{
+    text-decoration: underline;
+} 
+.sign-up_page-footer{
+    background: rgba(0,0,0,0.7);
+}
+.sign-up_page-footer > .container{
+    margin: 0 auto;
+}
+.sign-up_page-footer > .container > .footer-contents{
+    padding: 30px 100px;
+}
+.sign-up_page-footer .container .footer-contents > .footer-info{
+    gap: 150px;
 }
