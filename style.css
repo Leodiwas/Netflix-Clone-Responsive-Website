@@ -76,9 +76,9 @@ html,body{
 .navbar-contents{
     display: flex;
     justify-content: space-between;
-    padding: 0 56px;
-    padding-top: 28px;
+    padding: 28px 56px;
     z-index: 9999999;
+    margin-bottom: 120px;
 }
 .navbar-links{
     display: flex;
@@ -118,7 +118,6 @@ html,body{
 .hero{
     display: flex;
     justify-content: center;
-    margin-top: 120px;
 }
 .hero-contents{
     display: flex;
@@ -160,13 +159,11 @@ html,body{
     font-size: 18px;
     line-height: 20px;
     color: var(--color-gray);
-    width: 520px;
-    height: 76px;
-    padding: 26px 10px ;
-    border-radius: 4px 0 0 4px;
-    border-right: 0;
+    padding: 26px 360px 26px 8px ;
     cursor: pointer;
     outline: none;
+    border-right: 0;
+    border-radius: 2px;
 }
 .btn{
     font-weight: 400 ;
@@ -175,11 +172,12 @@ html,body{
     color: var(--color-primary-white);
     text-decoration: none;
     background: var(--color-primary-red);
-    padding: 18px 30px;
+    padding: 18px 20px;
     text-align: center;
-    border-left: none;
     outline: none;
-    border-radius: 0 4px 4px 0; 
+    border-left: 0;
+    border-radius: 2px;
+
 }
 .btn > i{
     font-size: 26px;
@@ -316,9 +314,8 @@ main .container > .frames-seperator{
 .sign-in_page-header > .container{
     max-width: 1600px;
 }
-.footer > .container{
-    max-width: 900px;
-    margin-block:  60px;
+.footer-contents{
+    padding: 60px 160px;
 }
 .footer-contents > .footer-contents-title{
     font-weight: 400;
@@ -356,7 +353,7 @@ main .container > .frames-seperator{
     text-decoration: none;
 }
 .footer-info-items a > p{
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 
 }
 .footer-info-items > a:hover{
@@ -546,7 +543,77 @@ main .container > .frames-seperator{
 /* media queries for Ipad & Tablet  */
 
 @media screen and (max-width: 768px ){
-
+    .container{
+        max-width: 720px;
+    }
+    .navbar-contents{
+        padding: 28px 40px;
+    }
+    .title{
+        font-size: 56px;
+        line-height: 60px;
+    }
+    .title-info{
+        margin-bottom: 15px;
+    }
+    .sub-title{
+        max-width: 36ch;
+    }
+    .input-btn{
+        flex-direction: column;
+    }
+    .input{
+        margin-bottom: 30px;
+        padding: 20px 360px 20px 16px;
+    }
+    .btn{
+        padding: 10px 18px;
+        font-size: 20px;
+    }
+    .frames{
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .frame-info {
+        width: 100%;
+        text-align: center;
+    }
+    .frame-title{
+        font-size: 42px;
+        margin-block: 10px;
+    }
+    .title-info{
+        font-size: 20px;
+        max-width: 63ch;
+    }
+    .frame-img{
+        width: 100%;
+    }
+    .card{
+        width: 360px;
+        left: 180px;
+    }
+    .footer-info{
+        gap: 46px;
+    }
+    .footer-info-items a > p {
+        margin-bottom: 24px;
+    }    
+    .frame-img-mac-pic{
+        width: 50%;
+        right: 180px;
+    }
+    .faq-contents > .frame-title {
+        margin-bottom: 25px;
+    }    
+    .faq-contents-bar{
+        padding: 10px 20px;
+        gap: 280px;
+    }
+    .footer-contents {
+        padding: 40px 60px;
+    }    
 }
 
 /* media queries for Mobile  */
