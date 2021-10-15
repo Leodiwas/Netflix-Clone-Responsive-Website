@@ -266,7 +266,6 @@ main .container > .frames-seperator{
 
 .frame-img-mac-pic{
     width: 62%;
-    height: 204px;
     top: 29px;
     position: absolute;
     right: 118px;
@@ -363,9 +362,11 @@ main .container > .frames-seperator{
 /* .......................Sign-in page Styling .........................*/
 
 .sign-up_page_body{
-    background: url(images/netflix-landingpage-img.png) no-repeat center center / cover;
+    background: url(images/netflix-signup-landingpageimg.png) no-repeat center center / cover;
+} 
+.sign-in_page_navbar-contents{
+    margin-bottom: 0;
 }
-
 .sign-in_page-header:after{
     background: rgba(0,0,0,0.2);
 }
@@ -557,10 +558,12 @@ main .container > .frames-seperator{
         margin-bottom: 15px;
     }
     .sub-title{
+        border-radius: 4px;
         max-width: 36ch;
     }
     .input-btn{
         flex-direction: column;
+        border-radius: 4px;
     }
     .input{
         margin-bottom: 30px;
@@ -611,13 +614,111 @@ main .container > .frames-seperator{
         padding: 10px 20px;
         gap: 280px;
     }
+    .footer-info{
+        margin-bottom: 15px;
+    }
     .footer-contents {
         padding: 40px 60px;
-    }    
+    } 
+    .sign-in_page_navbar-contents{
+    padding: 28px 20px 6px 20px;
+    }
+    .sign-up_page-footer > .container > .footer-contents {
+        padding: 30px 16px;
+    }  
+    .sign-up_page-footer .container .footer-contents > .footer-info {
+        gap: 75px;
+    } 
+    
 }
 
 /* media queries for Mobile  */
 
 @media screen and (max-width: 480px ){
-
+    .container{
+        max-width: 380px ;
+    } 
+    .header{
+        height: 0;
+        min-height: 530px;
+    }
+    .header:after{
+        height: 50vh;
+        background: rgba(0,0,0,0.2);
+    }
+    .seperator{
+        height: 12px;
+    }
+    .navbar-contents {
+        margin-bottom: 20px;
+    }
+    .navbar-logo > a > img{
+        width: 70%;
+    }
+    .navbar-contents {
+        padding: 14px 20px;
+    }
+    .navbar-links > .language-selector{
+        display: none;
+    }
+    .sign-in{
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+    .title {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .title-info {
+        font-size: 18px;
+        max-width: 50ch;
+    }
+    .sub-title {
+        font-size: 18px;
+        line-height: 20px;
+        max-width: 34ch;
+        margin-bottom: 10px;
+        border-radius: 4px;
+    }
+    .input{
+        padding: 12px 170px 12px 10px;
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+    .btn {
+        padding: 2px 16px;
+        font-size: 14px;
+        border-radius: 4px;
+    }
+    .btn > i {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    .frame-title {
+        font-size: 28px;
+        line-height: 40px;
+        margin-block: 5px;
+    }
+    .frames {
+        gap: 8px;
+    }
+    .frame-img-vid {
+        width: 73%;
+        top: 59px;
+        right: 53px;
+    }
+    .card{
+        width: 270px;
+        left: 54px;
+        top: 198px;
+        padding: 8px;
+    }
+    body > section:nth-child(5) > div > div > div > div.frame-img > div > img:nth-child(1){
+        width: 14%;
+    }
+    .frame-img-mac-pic {
+        width: 60%;
+        right: 70px;
+        /* height: 0px; */
+    }
 }
