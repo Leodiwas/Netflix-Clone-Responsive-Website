@@ -17,4 +17,3 @@ function togglerClick() {
   navMenu.classList.toggle('open');
 }
 
-

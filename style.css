@@ -31,23 +31,24 @@
 }
 
 html,body{
-    background: var(--color-primary-black);
+    background: var(--color-primary-black) !important;
     font-family: "Netflix sans", sans-serif;
-    
 }
 
 .container{
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1200px ;
+    margin: 0 auto !important;
 }
 .img-responsive{
     max-width: 100%;
     height: auto;
 }
 .seperator{
-    height: 6px;
+    height: 6px !important;
     background: var(--color-seperator);
     border: none;
+    margin: 0;
+    opacity: 1;
 }
 
 /* .........................header styling.................... */
@@ -112,6 +113,9 @@ html,body{
     text-decoration: none;
     z-index: 99;
 }
+.sign-in:hover{
+    color: white;
+}
 
 /* .......................hero-section styling........................... */
 .hero{
@@ -139,7 +143,6 @@ html,body{
     font-size: 26px;
     line-height: 32px;
     color: var(--color-primary-white);
-    margin-bottom: 30px;
 }
 .sub-title{
     font-weight: 500;
@@ -164,7 +167,7 @@ html,body{
     border: none;
     border-radius: 2px 0 0 2px;
 }
-.btn{
+.btnn{
     font-weight: 400 ;
     font-size: 30px;
     line-height: 38px;
@@ -177,7 +180,10 @@ html,body{
     border: none;
     border-radius: 0 2px 2px 0;
 }
-.btn > i{
+.btnn:hover{
+    color: var(--color-primary-white);
+}
+.btnn > i{
     font-size: 26px;
     color: var(--color-primary-white);
     margin-left: 14px;
@@ -215,8 +221,8 @@ html,body{
     position: absolute;
     height: 217  ;
     width: 68%;
-    top: 83px;
-    right: 113px;
+    top: 82px;
+    right: 129px;
     z-index: 0;
 }
 main .container > .features-seperator{
@@ -227,17 +233,17 @@ main .container > .features-seperator{
 .reverse{
     flex-direction: row-reverse;
 }
-.card{
-    position: absolute;
-    top: 248px;
-    left: 92px;
-    padding: 8px 10px;
-    border-radius: 10px;
-    display: flex;
-    background: var(--color-primary-black);
-    align-items: center;
-    border: 3px solid rgba(255,255,255, 0.25);
-    width: 324px;
+.card-items{
+    position: absolute !important;
+    top: 248px !important;
+    left: 92px !important;
+    padding: 8px 10px !important;
+    border-radius: 10px !important;
+    display: flex !important;
+    background: var(--color-primary-black) !important;
+    align-items: center !important;
+    border: 3px solid rgba(255,255,255, 0.25) !important;
+    width: 324px !important;
 }
 .card-block{
     background: var(--color-primary-black);
@@ -263,10 +269,10 @@ main .container > .features-seperator{
 /* ..........................section-3  styling.......................... */
 
 .feature-img-mac-pic{
-    width: 62%;
+    width: 56%;
     top: 29px;
     position: absolute;
-    right: 118px;
+    right: 166px;
     z-index: 2222;
 } 
 
@@ -279,7 +285,6 @@ main .container > .features-seperator{
     align-items: center;
     text-align: center;
     margin-block: 80px;
-
 }
 .faq-contents > .feature-title{
     margin-bottom: 50px;
@@ -291,6 +296,7 @@ main .container > .features-seperator{
     margin-bottom: 0;
 }
 .faq-contents-bar{
+    width: 100%;
     background: #303030;    ;
     display: flex;
     align-items: center;
@@ -304,6 +310,10 @@ main .container > .features-seperator{
     color: var(--color-primary-white);
     font-size: 20px;
     text-decoration: none;
+}
+.faq-input{
+    margin-top: 66px;
+    text-align: center;
 }
 
 /* ...................footer styling.............................. */
@@ -360,7 +370,7 @@ main .container > .features-seperator{
 /* .......................Sign-in page Styling .........................*/
 
 .sign-up_page_body{
-    background: url(images/netflix-signup-landingpageimg.png) no-repeat center center / cover;
+    background: url(images/netflix-signup-landingpageimg.png) no-repeat center center / cover !important;
 } 
 .sign-in_page_navbar-contents{
     margin-bottom: 0;
@@ -537,6 +547,67 @@ main .container > .features-seperator{
   }
   /* nav-toggler_show-hide css ends */
 
+
+  
+/* bootstrap override codes........................ */
+
+#headingOne > button{
+    margin-left: 0;
+    background: #303030;
+    color: white !important;
+}
+#headingTwo > button{
+    margin-left: 0;
+    background: #303030;
+}
+#headingThree > button{
+    margin-left: 0;
+    background: #303030;
+}
+#headingFour > button{
+    margin-left: 0;
+    background: #303030;
+}
+#headingFive > button{
+    margin-left: 0;
+    background: #303030;
+}
+#headingSix > button{
+    margin-left: 0;
+    background: #303030;
+}
+.accordion-item{
+    margin-bottom: 10px;
+    width: 60%;
+}
+.accordion-body{
+    background: #303030;
+    padding: 30px 32px;
+}
+.accordion-body-content{
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px;
+    color: #FFFFFF;
+    text-align: start;
+}
+.accordion-item{
+    border: none !important;
+    background-color: none;
+}
+.accordion-item > h2 > button > p{
+    margin-bottom: 0;
+}
+.accordion-collapse {
+    background: #303030;
+}
+.accordion-button::after{
+    margin-left: 0;
+}
+
+
+
 /* ......................Media Queries Starts..........................  */
 
 /* media queries for Ipad & Tablet  */
@@ -558,6 +629,8 @@ main .container > .features-seperator{
     .sub-title{
         border-radius: 4px;
         max-width: 36ch;
+        margin-bottom: 20px !important; 
+        margin: auto;
     }
     .input-btn{
         flex-direction: column;
@@ -567,7 +640,7 @@ main .container > .features-seperator{
         margin-bottom: 30px;
         padding: 20px 360px 20px 16px;
     }
-    .btn{
+    .btnn{
         padding: 10px 18px;
         font-size: 20px;
     }
@@ -591,9 +664,10 @@ main .container > .features-seperator{
     .feature-img{
         width: 100%;
     }
-    .card{
-        width: 360px;
-        left: 180px;
+    .card-items{
+        width: 324px !important;
+        left: 180px !important;
+        top: 250px !important;
     }
     .footer-info{
         gap: 46px;
@@ -627,7 +701,13 @@ main .container > .features-seperator{
     .sign-up_page-footer .container .footer-contents > .footer-info {
         gap: 75px;
     } 
-    
+    /* bootstrap */
+    .accordion-item{
+        width: 88%;
+    }
+    .accordion-body-content{
+        font-size: 20px;
+    }
 }
 
 /* media queries for Mobile  */
@@ -675,12 +755,12 @@ main .container > .features-seperator{
         font-size: 14px;
         margin-bottom: 16px;
     }
-    .btn {
+    .btnn {
         padding: 2px 16px;
         font-size: 14px;
         border-radius: 4px;
     }
-    .btn > i {
+    .btnn > i {
         font-size: 12px;
         margin-left: 10px;
     }
@@ -694,14 +774,15 @@ main .container > .features-seperator{
     }
     .feature-img-vid {
         width: 73%;
-        top: 59px;
-        right: 53px;
+        top: 50px;
+        right: 50px;
     }
-    .card{
-        width: 270px;
-        left: 54px;
-        top: 198px;
-        padding: 8px;
+    .card-items{
+        width: 236px !important;
+        left: 180px;
+        padding: 4px 8px;
+        top: 184px !important;
+        left: 64px !important;
     }
     body > section:nth-child(5) > div > div > div > div.feature-img > div > img:nth-child(1){
         width: 14%;
@@ -751,7 +832,7 @@ main .container > .features-seperator{
         border-top: 0;
     }
     .sign-up_page_body{
-        background: none;
+        background: none !important;
     }
     .sign-in_btn{
         padding: 16px 160px;
@@ -782,6 +863,14 @@ main .container > .features-seperator{
         gap: 0;
     }
 
+    /* bootstrap */
+    .accordion-item{
+        width: 100%;
+    }
+    .accordion-body-content{
+        font-size: 16px;
+        line-height: 26px;
+    }
 
 
 
