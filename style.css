@@ -785,12 +785,17 @@ h2 {
   .card-items {
     width: 256px !important;
     left: 180px;
-    padding: 4px 8px !important;
-    top: 184px !important;
+    top: 190px !important;
     left: 54px !important;
   }
   .card-block {
     text-align: start;
+  }
+  .card-title {
+    margin-bottom: 0 !important;
+  }
+  .card-download {
+    margin-bottom: 0 !important;
   }
   body
     > section:nth-child(5)
