@@ -545,8 +545,8 @@ main .container > .features-seperator {
 
 /* bootstrap override codes........................ */
 
-h2{
-    border-bottom: 4px solid #000000 !important;
+h2 {
+  border-bottom: 4px solid #000000 !important;
 }
 #headingOne > button {
   margin-left: 0;
@@ -608,9 +608,9 @@ h2{
 .accordion-button:not(.collapsed)::after {
   background-image: url(images/cross.svg) !important ;
 }
-.accordion-button:focus{
-    box-shadow: unset !important;
-    border-color: unset !important;
+.accordion-button:focus {
+  box-shadow: unset !important;
+  border-color: unset !important;
 }
 
 /* ......................Media Queries Starts..........................  */
@@ -783,11 +783,14 @@ h2{
     right: 50px;
   }
   .card-items {
-    width: 236px !important;
+    width: 256px !important;
     left: 180px;
-    padding: 4px 8px;
+    padding: 4px 8px !important;
     top: 184px !important;
-    left: 64px !important;
+    left: 54px !important;
+  }
+  .card-block {
+    text-align: start;
   }
   body
     > section:nth-child(5)
