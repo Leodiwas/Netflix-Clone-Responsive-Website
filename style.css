@@ -218,9 +218,9 @@ body {
 .feature-img-vid {
   position: absolute;
   height: 217;
-  width: 68%;
+  width: 62%;
   top: 82px;
-  right: 129px;
+  right: 162px;
   z-index: 0;
 }
 main .container > .features-seperator {
@@ -669,6 +669,9 @@ h2 {
   .feature-img {
     width: 100%;
   }
+  .feature-img-vid {
+    width: 55%;
+  }
   .card-items {
     width: 324px !important;
     left: 180px !important;
@@ -779,7 +782,7 @@ h2 {
   }
   .feature-img-vid {
     width: 73%;
-    top: 50px;
+    top: 55px;
     right: 50px;
   }
   .card-items {
